@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        /* .box { */
+            /* background-color: blue;
+            height: 90vh;
+            width: 70vw; */
+        /* } */
+
+        /* .ball { */
+            /* background-color: red;
+            height: 121px;
+            width: 121px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 65px;
+            left: 10px;
+            animation-name: Izzu;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: Izzu 2s cubic-bezier(0.22, 0.45, 0, 0.98) 1s infinite forwards alternate, */
+            /* Izzu2 2s cubic-bezier(0, 0.35, 0.18, 1.01) 1s infinite forwards alternate; */ 
+        /* } */
+
+        /* @keyframes Izzu {
+            from {
+                background-color: rgb(116, 73, 3);
+            }
+
+            to {
+                transform: translateY(-1110px);
+                background-color: yellow;
+            }
+        } */
+
+        /* @keyframes Izzu2 {
+            from {
+                background-color: rgb(116, 73, 3);
+            }
+
+            to {
+                transform: translateX(150px);
+                background-color: rgb(96, 11, 156);
+            }
+        } */
+
+        .box{
+            position: relative;
+            height: 80vh;
+            width: 100vw;
+            background-color: rgba(21, 92, 207, 0.66);
+        }
+
+        .ball{
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: animateX 3s linear infinite,
+                        animateY 1s ease-out infinite alternate;
+        }
+
+        @keyframes animateX {
+            form{
+                left: 0;
+            }
+            to{
+                left:100% ;
+            }   
+        }
+        @keyframes animateY {
+            form{
+                bottom: 0;
+            }
+            to{
+                bottom:100% ;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>
